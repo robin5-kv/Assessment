@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="/Users/robin.vincent/Documents/Assesesment/portrave-1/src/main/">
+        <classes>
+            <class name="testsauce.loginTest">
+                <methods>
+                    <include name="loginInToApplication"/>
+                    <include name="loginInToApplicationInvalidData"/>
+                    <include name="testLocalStorageAfterLogin"/>
+                    <include name="verifySessionUsernameCookie"/>
+                </methods>
+            </class>
+            <class name="testsauce.productsTest">
+                <methods>
+                    <include name="testProductsIntoCart"/>
+                    <include name="testProductRemainsInCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
