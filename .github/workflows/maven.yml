@@ -11,7 +11,17 @@ name: Java CI with Maven
 on:   
   pull_request:
     branches: [ "main" ]
-
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+        - info
+        - warning
+        - debug 
 jobs:
   build:
     runs-on: ubuntu-latest
