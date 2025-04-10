@@ -1,11 +1,13 @@
 package pageObjects;
 
 import base.baseClass;
+import dummy.Listner;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Listeners;
 
 import java.time.Duration;
-
+@Listeners(Listner.class)
 public class productPage extends baseClass {
 
     private final WebDriver driver;

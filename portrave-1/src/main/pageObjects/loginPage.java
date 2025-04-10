@@ -2,10 +2,12 @@ package pageObjects;
 
 
 import base.baseClass;
+import dummy.Listner;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Listeners;
 
-
+@Listeners(Listner.class)
 public class loginPage extends baseClass {
     private final WebDriver driver;
     private final By usernameInput = By.id("user-name");
