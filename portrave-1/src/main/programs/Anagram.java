@@ -27,7 +27,7 @@ public class Anagram {
     }
 
     public static void main(String[] args) {
-        checkPalindrome("but", "tub");
+        checkPalindrome("listen", "silent");
 
 
     }
