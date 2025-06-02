@@ -20,4 +20,16 @@ public class removeDuplicate
 
         System.out.println(result.toString());
     }
+
+     /* for(int i=0; i<a.length();i++)
+    {
+        String c=""+a.charAt(i);
+        if(result.contains(c))
+        {
+            continue;
+        }
+        result=result+c;
+    }
+  System.out.print(result);
+}*/
 }

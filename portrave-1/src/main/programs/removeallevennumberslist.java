@@ -24,7 +24,7 @@ public class removeallevennumberslist
                 itr.remove();
             }
         }
-        
+        System.out.println(list1);
     }
 
 }
