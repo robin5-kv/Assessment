@@ -7,18 +7,29 @@ public class removeDuplicate
 {
     public static void main(String[] args) {
         String name = "programming";
-        StringBuilder result = new StringBuilder();
-
-        Set<Character> seen = new LinkedHashSet<>();
-
-        for (char c : name.toCharArray()) {
-            if (!seen.contains(c)) {
-                seen.add(c);
-                result.append(c);
+        String result="";
+//        StringBuilder result = new StringBuilder();
+//        char[] a = name.toCharArray();
+//        Set<Character> seen = new LinkedHashSet<>();
+//
+//        for (char c : a ) {
+//            if (!seen.contains(c)) {
+//                seen.add(c);
+//                result.append(c);
+//            }
+//        }
+//
+//        System.out.println(result.toString());
+        for(int i=0; i<name.length();i++)
+        {
+            String c=""+name.charAt(i);
+            if(result.contains(c))
+            {
+                continue;
             }
+            result=result+c;
         }
-
-        System.out.println(result.toString());
+        System.out.print(result);
     }
 
      /* for(int i=0; i<a.length();i++)

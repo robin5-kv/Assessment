@@ -6,7 +6,7 @@ public class nonrepeatedcharacters
 {
     public static void main(String[] args) {
 
-        String name= "swiss";
+        String name= "Programming";
         char[] namearr=name.toCharArray();
         HashMap<Character,Integer> hm = new HashMap<>();
         for(char nam:namearr){

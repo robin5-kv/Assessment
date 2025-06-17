@@ -1,24 +1,24 @@
 package programs;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Nonrepeated {
     public static void main(String[] args) {
         int[] a = {1, 2, 2, 3, 3};
 
-        int nonrepeated = 0;
-        int count = 1;
-        for (int i = 0; i < a.length - 1; i++) {
-            for (int j = 0; j < a.length - 1; j++) {
-                if (a[i] == a[j]) {
-                    count++;
-                    a[j] = '0';
-
-                }
-                if ((a[i] != '0') && (count == 1)) {
-                    nonrepeated = a[i];
-                }
-            }
+        HashMap<Integer,Integer> hm = new HashMap<>();
+        for(int val:a){
+            hm.put(val,hm.getOrDefault(val,0)+1);
         }
-        System.out.println(nonrepeated);
+        for(Map.Entry<Integer,Integer> val:hm.entrySet()){
+            if(val.getValue()==1){
+                System.out.println(val.getKey()+ " :: "+val.getValue());
+            }
+
+
+        }
+
     }
 }
 
