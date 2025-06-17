@@ -18,8 +18,12 @@ public class Anagram {
 
 
             }
-            System.out.println("It is anangram words are " + name1 + " and " + name2);
-            return true;
+            if(name1.equals(temp)){
+                return true;
+            }
+            else {
+                return false;
+            }
         } else {
             System.out.println("Length are  not equal");
             return false;
