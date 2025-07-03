@@ -28,6 +28,11 @@ public class Anagram {
             System.out.println("Length are  not equal");
             return false;
         }
+        /*char[] chArray1 = str1.toCharArray();
+        char[] chArray2 = str2.toCharArray();
+        Arrays.sort(chArray1);
+        Arrays.sort(chArray2);
+        System.out.println(Arrays.equals(chArray1, chArray2));*/
     }
 
     public static void main(String[] args) {
